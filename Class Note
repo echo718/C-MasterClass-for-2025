@@ -1,0 +1,92 @@
+Chapter 2: Foundations
+1. Ctrl+shift+p type.net select console app
+then app will be created automatically, then dotnet run
+2. in Bin folder, .dll file is used for save files that computer can understand, .exe can run the app
+3.shift+alt+up/down copy current line up/down
+4. console.writeLine(a-b) will not work as subtraction operator is lower, but + and * and / works
+5.Console.ReadLine() read user input
+6. Add comment:/*00*/,  ctrl+k+c can add comment to multiple lines, ctrl+k+u to uncomment
+7. int.Parse(value); change from string to number type
+8. string interpolation: $"this is:{a},second is:{b}"; or $"sum is :{a+b}";
+9. Char type means only one letter, write with singlequote: 'a';
+string type means many letters, write with double quote:"abc";
+10. int[] numbers = new int[3];=> is an array, numbers[0], numbers[1],numbers[2]is 0; 
+	numbers[numbers.length-2] same as number[^2]; ^ means index from end 2 operator
+	also, if declare with values: int[] numbers = new int[]{1,2,3,4};
+	char[,] letters = new char[2,3]=>declare an array with 2 rows, 3 columns.
+	or, we can declare with valules: var words = new []{1,2,3};
+11. foreach(a in test){};
+12. Array length is fixed, List size can be changed.
+	List<string> words = new List<string>();=>words length is words.Count, then will get 0.
+	words.Add("test"); to create values, 
+words[0] to get value, 
+words.Remove("test") to remove item,  
+words.RemoveAt(0); remove first element; 
+words.IndexOf("test") find the index of words;
+words.Clear()
+13. if a function aims to return multiple values, can use Out keywords as a parameter, eg:
+ Calculate(int a, int b, out int sum, out int product)
+    {
+        sum = a + b;
+        product = a * b;
+    }
+int resultSum, resultProduct; // No need to initialize
+Calculate(x, y, out resultSum, out resultProduct);
+Console.WriteLine($"Sum: {resultSum}, Product: {resultProduct}");
+14. int.TryParse(value,out int number)=>return Boolean, if parse to int succeed, return true, number is int type value; if parse not succeed, return nothing, number is 0
+15. oop means face to object, based on object concept, object can have list object, include person, abstract object, for object we create class. 
+Chapter 3: OOP
+1. class name first letter is capital, class first build fields,eg: public int a;-- this is initialized to 0 automatically;
+	constructor is created to pass parameter; use ctor tab tab quick create;ctor name is same with class name, public classname (){};
+	if we public a field in class, public int (variable name first letter should be capital);
+	if we private a field in class, name start with underscore, eg: private int _-base
+	if name as name variable in c#, use @, such as @base
+2. method overloading:
+in class, we can have two same method name, but parameter type should be different
+3. expression: evaluates to a value;eg: getText();
+statement: not evaluate to a value; eg:if statement;
+4. if a method only return one line, we can write as: public int a() => a*b; 
+5. this keyword: reference the current class;
+6. optional parameter: int daysFromNow = 7; must appear after all parameters; if more thanone optional parameter, we have to clarify the parameter name when invoke it;
+7. in the method, declare a variable no need var, can int a=3; direcly
+8. nameof() return a string of a variable
+9. readonly can only be assigned at the declaration or in ctor;eg public readonly int a; try use readonly is good practice;
+const int Name = 1; is a const type variable; const variable name start with capital letter; no matter in method or initial declaration;
+10. property: when we public a variable and set value, we do like this:
+private int _test;
+public int Test
+{
+get =>_test; or can write like this:
+get{ return _test;}
+set=>_test = value; or can write this:
+set{
+_test = value;
+}
+}
+it's old version for c#, now we write like:
+public int Test {get; private set;}
+fields: is variable-like, single access modifier;
+properties: method-like, separate access for getter and setter;
+11. object initializers: if we use ctor, can't initializer again.
+12. computed property:
+method represents actions; properties represent data;
+13. static class can't be instantiated, only works as a container; const can't be initialized, if const don't work, try static.
+14. single responsibility principle: one class should responsibility for one purpose/method, such addfile only, 
+repositories are classes or components that encapsulate the logic required to access data resources, so if logic is relative to access data resource, can me as class NamesRepository{};
+15.namespace can include classes, then each class can invoke directly even though not in the same cs file; but if different namespace, have to use using ** ;
+16. global using directive: if use one at many  files, we can glable using** directly, then other files no need to import again
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
