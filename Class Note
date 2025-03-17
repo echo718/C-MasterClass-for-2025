@@ -75,12 +75,87 @@ method represents actions; properties represent data;
 repositories are classes or components that encapsulate the logic required to access data resources, so if logic is relative to access data resource, can me as class NamesRepository{};
 15.namespace can include classes, then each class can invoke directly even though not in the same cs file; but if different namespace, have to use using ** ;
 16. global using directive: if use one at many  files, we can glable using** directly, then other files no need to import again
+Chapter 4: OOP Advanced
+1. polymorphism 多态性: offer a single interface to entities of different types, 
+Inheritance继承: public class dog:animal{}, dog继承animal的类型， animal是polymorphism, we can invoke animal public and protected method from dog class, dog can inheritance public and protected method from animal.
+2. If dog class override a variable which also exist in animal, even though we invoke animal class variable, it still same as dog. 
+eg: public class Animal
+{
+public string Name{get;}="test";
+}
+public class Dog: Animal
+{
+public override string Name=>"test1"
+}
+Animal newAnimal = new Dog();
+newAnimal.Name => is test1, not test.
+3. virtual method:
+virtual method combine with override method can help avoid code duplicated,
+eg: public class NumberSumCalculater
+{
+ public int Calculate(List<int> numbers)
+{
+	int sum=0;
+foreach(int number in numbers)
+{
+	if(IsAddNumber(number))
+	{
+		sum+=number;
+	}
+}
+return sum;
+}
+protected virtual bool IsAddNumber(int number)
+{
+	return true;
+}
+}
+--
+public class PositiveCalculater : NumberSumCalculater
+{
+	public override bool IsAddNumber(int number)
+	{
+		return number>0
+	}
+}
+--
+var numbers = new List<int>{1,2,3,4};
+NumberSumCalculater calculater = new NumberSumCalculater(_);
+or 
+NumberSumCalculater calculater = new PositiveCalculater(_);
 
-
-
-
-
-
+int results = calculater.Calculate(numbers);
+For above code logic, if invoke PositiveCalculater method, results only calculate positive numbers;
+if invoke NumberSumCalculater method, results calculate all numbers
+4.we try to avoid multiple inheritance, otherwise too complex
+5. base keyword: within a derived class. base keyword is used to access base class member/method/properties
+eg: call base.Show() in derive class, it will call parent Show method.
+6. Implicit/explicit Conversion转换: 
+implicit模糊 conversion doesn't require cast expression,
+explicit conversion: int d = (int)c=>c is decimal type
+7. upcasting: from derived class to base class=>work
+downcasting: from base class to derived class=>not work
+8. is operator: used to check if some object is of a give type, eg: string word="h"; bool isInt = word is int; we can use is operator to check the type, then case the variable
+9. as operator: type conversion, compared with cast, as will return null if case fails, but if use explicit conversion, will cause an exception if case fails.
+10. Abstract class and method:
+abstract method can only be declared in abstract class, normal method can be declared in both abstract and non-abstract class.
+abstract method not provide any implementation.
+eg://Abstract method - no implementation
+    public abstract void MakeSound();
+11.Sealed class and method: sealed class can't be inheritance, eg: sealed class Car{}, then next class if write:Car will cause error.
+sealed method can precent further overriding in child class.
+12. static class: can't be derive from them, eg:
+public static class A{public static methodName(){}}
+var test = new A()=>will cause error, 
+correct: var test = A.methodName();
+static method can't be overridden because it's sealed method
+13. extension method: we can create a method and invoke without change resource code,
+it must be a static class and method, use this as the first parameter
+eg:
+14: add @ symbol in from of string, will allow you write multiple lines
+eg: var a = @"a
+b
+c";
 
 
 
