@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\todolist\\TodoList.csproj": {}
+    "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\Cookbook\\Cookbook.csproj": {}
   },
   "projects": {
-    "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\todolist\\TodoList.csproj": {
+    "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\Cookbook\\Cookbook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\todolist\\TodoList.csproj",
-        "projectName": "TodoList",
-        "projectPath": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\todolist\\TodoList.csproj",
+        "projectUniqueName": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\Cookbook\\Cookbook.csproj",
+        "projectName": "Cookbook",
+        "projectPath": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\Cookbook\\Cookbook.csproj",
         "packagesPath": "C:\\Users\\sunto\\.nuget\\packages\\",
-        "outputPath": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\todolist\\obj\\",
+        "outputPath": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\Cookbook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sunto\\AppData\\Roaming\\NuGet\\NuGet.Config"
