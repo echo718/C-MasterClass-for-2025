@@ -1,14 +1,16 @@
+using Cookbook.Cookbook.Repository;
+
 namespace Cookbook.Cookbook
 {
     public class PrintExistingRecipes
     {
         private string _existingRecipes;
-        private readonly List<IngredientsList> _ingredientsList;
+        private readonly List<IngredientsRepository> _ingredientsList;
 
         public PrintExistingRecipes(string ExistingRecipes)
         {
             _existingRecipes = ExistingRecipes;
-            _ingredientsList = new IngredientsList().GetIngredientsList();
+            _ingredientsList = new IngredientsRepository().GetIngredientsList();
         }
 
         public void Print()

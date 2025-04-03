@@ -1,6 +1,6 @@
 namespace Cookbook.Cookbook
 {
-    public class ConstStrings
+    public class ConstRepository
     {
         public const string FileName = "Recepients.json";
         public const string NoIngredientsSaved = "No ingredients have been selected. Recipe will not be saved";

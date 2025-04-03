@@ -5,9 +5,9 @@ namespace Cookbook.Cookbook
         public void Read()
         {
 
-            if (File.Exists(ConstStrings.FileName))
+            if (File.Exists(ConstRepository.FileName))
             {
-                string jsonContent = File.ReadAllText(ConstStrings.FileName);
+                string jsonContent = File.ReadAllText(ConstRepository.FileName);
                 string[] result = jsonContent.Replace("[", "").Replace("]", "").Split("\"");
                 int _reciptSequence = 1;
 

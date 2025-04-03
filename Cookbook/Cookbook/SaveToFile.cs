@@ -18,13 +18,13 @@ namespace Cookbook.Cookbook
             string newJsonString = JsonSerializer.Serialize(jsonList);
             string newList = newJsonString;
 
-            List<string> lines = File.Exists(ConstStrings.FileName)
-                ? new List<string>(File.ReadAllLines(ConstStrings.FileName))
+            List<string> lines = File.Exists(ConstRepository.FileName)
+                ? new List<string>(File.ReadAllLines(ConstRepository.FileName))
                 : new List<string>();
 
             lines.Add(newList);
 
-            File.WriteAllLines(ConstStrings.FileName, lines);
+            File.WriteAllLines(ConstRepository.FileName, lines);
         }
     }
 
