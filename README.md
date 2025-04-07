@@ -133,28 +133,28 @@ virtual method combine with override method can help avoid code duplicated,
 	if invoke NumberSumCalculater method, results calculate all numbers
 
 4.we try to avoid multiple inheritance, otherwise too complex
-5. base keyword: within a derived class. base keyword is used to access base class member/method/properties
+5.base keyword: within a derived class. base keyword is used to access base class member/method/properties
 eg: call base.Show() in derive class, it will call parent Show method.
-6. Implicit/explicit Conversion转换: 
+6.Implicit/explicit Conversion转换: 
 implicit模糊 conversion doesn't require cast expression,
 explicit conversion: int d = (int)c=>c is decimal type
-7. upcasting: from derived class to base class=>work
+7.upcasting: from derived class to base class=>work
 downcasting: from base class to derived class=>not work
-8. is operator: used to check if some object is of a give type, eg: string word="h"; bool isInt = word is int; we can use is operator to check the type, then case the variable
-9. as operator: type conversion, compared with cast, as will return null if case fails, but if use explicit conversion, will cause an exception if case fails.
-10. Abstract class and method:
+8.is operator: used to check if some object is of a give type, eg: string word="h"; bool isInt = word is int; we can use is operator to check the type, then case the variable
+9.as operator: type conversion, compared with cast, as will return null if case fails, but if use explicit conversion, will cause an exception if case fails.
+10.Abstract class and method:
 abstract method can only be declared in abstract class, normal method can be declared in both abstract and non-abstract class.
 abstract method not provide any implementation.
 eg://Abstract method - no implementation
     public abstract void MakeSound();
 11.Sealed class and method: sealed class can't be inheritance, eg: sealed class Car{}, then next class if write:Car will cause error.
 sealed method can precent further overriding in child class.
-12. static class: can't be derive from them, eg:
+12.static class: can't be derive from them, eg:
 public static class A{public static methodName(){}}
 var test = new A()=>will cause error, 
 correct: var test = A.methodName();
 static method can't be overridden because it's sealed method
-13. extension method: we can create a method and invoke without change resource code,
+13.extension method: we can create a method and invoke without change resource code,
 it must be a static class and method, use this as the first parameter
 eg:
 namespace Polymorphism.Extensions
@@ -165,7 +165,7 @@ namespace Polymorphism.Extensions
 			input.split(Environment.NewLine).Length;
 	}
 }
-14: add @ symbol in from of string, will allow you write multiple lines
+14.add @ symbol in from of string, will allow you write multiple lines
 eg: var a = @"a
 b
 c";
