@@ -191,7 +191,25 @@ JsonSerializer.Deserialize<A>(a); =>must put return type and change json to stri
 
 ------------------
 
-
+Chapter 5:
+1. throw new Exception("***"), different with throw, throw preserves the stack trace, whereas throw ex will not preserve the stack trace, we will lose information about the first place where error occurs.
+2. try to avoid use throw; as it can't offer precise information.
+3. we can create a global try-catch in app base point, such as:
+ try{
+Run();
+}catch(Exception ex)
+{
+Console.WriteLine(" app error");
+Console.ReadyKey(); // readykey monitor ctril, alt, single key press; readLine return string type
+}
+4. exception filer, we can add when(ex.**) to filer the different exception type
+try{}
+catch(HTTPRequestException ex) when (ex.Message = 403)
+{
+	**
+}
+5. we can custom exception, except using buildin exceptions, such as ArgumentException("") or ArgumentOutOfRangeException(""), ArgumentNullException(""), InvalidOperationException("")
+6. change console color:Console.ForegroundColor = ConsoleColor.Red;
 
 
 
