@@ -96,41 +96,42 @@ Animal newAnimal = new Dog();
 newAnimal.Name => is test1, not test.
 3. virtual method:
 virtual method combine with override method can help avoid code duplicated,
-eg: public class NumberSumCalculater
-{
- public int Calculate(List<int> numbers)
-{
-	int sum=0;
-foreach(int number in numbers)
-{
-	if(IsAddNumber(number))
+	eg: public class NumberSumCalculater
 	{
-		sum+=number;
-	}
-}
-return sum;
-}
-protected virtual bool IsAddNumber(int number)
-{
-	return true;
-}
-}
---
-public class PositiveCalculater : NumberSumCalculater
-{
-	public override bool IsAddNumber(int number)
+	 public int Calculate(List<int> numbers)
 	{
-		return number>0
+		int sum=0;
+	foreach(int number in numbers)
+	{
+		if(IsAddNumber(number))
+		{
+			sum+=number;
+		}
 	}
-}
-var numbers = new List<int>{1,2,3,4};
-NumberSumCalculater calculater = new NumberSumCalculater(_);
-or 
-NumberSumCalculater calculater = new PositiveCalculater(_);
+	return sum;
+	}
+	protected virtual bool IsAddNumber(int number)
+	{
+		return true;
+	}
+	}
+	--
+	public class PositiveCalculater : NumberSumCalculater
+	{
+		public override bool IsAddNumber(int number)
+		{
+			return number>0
+		}
+	}
+	var numbers = new List<int>{1,2,3,4};
+	NumberSumCalculater calculater = new NumberSumCalculater(_);
+	or 
+	NumberSumCalculater calculater = new PositiveCalculater(_);
+	
+	int results = calculater.Calculate(numbers);
+	For above code logic, if invoke PositiveCalculater method, results only calculate positive numbers;
+	if invoke NumberSumCalculater method, results calculate all numbers
 
-int results = calculater.Calculate(numbers);
-For above code logic, if invoke PositiveCalculater method, results only calculate positive numbers;
-if invoke NumberSumCalculater method, results calculate all numbers
 4.we try to avoid multiple inheritance, otherwise too complex
 5. base keyword: within a derived class. base keyword is used to access base class member/method/properties
 eg: call base.Show() in derive class, it will call parent Show method.
