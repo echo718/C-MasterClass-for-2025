@@ -1,0 +1,15 @@
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\bin\Debug\net8.0\GameDataParser.exe
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\bin\Debug\net8.0\GameDataParser.deps.json
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\bin\Debug\net8.0\GameDataParser.runtimeconfig.json
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\bin\Debug\net8.0\GameDataParser.dll
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\bin\Debug\net8.0\GameDataParser.pdb
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\GameDataParser.GeneratedMSBuildEditorConfig.editorconfig
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\GameDataParser.AssemblyInfoInputs.cache
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\GameDataParser.AssemblyInfo.cs
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\GameDataParser.csproj.CoreCompileInputs.cache
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\GameDataParser.sourcelink.json
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\GameDataParser.dll
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\refint\GameDataParser.dll
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\GameDataParser.pdb
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\GameDataParser.genruntimeconfig.cache
+D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\gamedataparser\obj\Debug\net8.0\ref\GameDataParser.dll
