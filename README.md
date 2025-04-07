@@ -34,7 +34,9 @@ int resultSum, resultProduct; // No need to initialize
 Calculate(x, y, out resultSum, out resultProduct);
 Console.WriteLine($"Sum: {resultSum}, Product: {resultProduct}");
 14. int.TryParse(value,out int number)=>return Boolean, if parse to int succeed, return true, number is int type value; if parse not succeed, return nothing, number is 0
-15. oop means face to object, based on object concept, object can have list object, include person, abstract object, for object we create class. 
+-15. oop means face to object, based on object concept, object can have list object, include person, abstract object, for object we create class. 
+------------------------------
+
 Chapter 3: OOP
 1. class name first letter is capital, class first build fields,eg: public int a;-- this is initialized to 0 automatically;
 	constructor is created to pass parameter; use ctor tab tab quick create;ctor name is same with class name, public classname (){};
@@ -75,6 +77,9 @@ method represents actions; properties represent data;
 repositories are classes or components that encapsulate the logic required to access data resources, so if logic is relative to access data resource, can me as class NamesRepository{};
 15.namespace can include classes, then each class can invoke directly even though not in the same cs file; but if different namespace, have to use using ** ;
 16. global using directive: if use one at many  files, we can glable using** directly, then other files no need to import again
+
+----------------------------------------------
+    
 Chapter 4: OOP Advanced
 1. polymorphism 多态性: offer a single interface to entities of different types, 
 Inheritance继承: public class dog:animal{}, dog继承animal的类型， animal是polymorphism, we can invoke animal public and protected method from dog class, dog can inheritance public and protected method from animal.
@@ -118,7 +123,6 @@ public class PositiveCalculater : NumberSumCalculater
 		return number>0
 	}
 }
---
 var numbers = new List<int>{1,2,3,4};
 NumberSumCalculater calculater = new NumberSumCalculater(_);
 or 
@@ -179,9 +183,13 @@ Interface&&abstract class difference:
 interface not include any data, no implementation; define " behaviour" "can do","is able to"
 abstract class can contain data, can implement in non-abstract method. define"is","category""is-a"
 both can't be inheritance. 
-16.JSON:      JsonSerializer.Serialize(a);=>return object as JSON string.
+16.
+JSON:JsonSerializer.Serialize(a);=>return object as JSON string.
 a is an object     
 JsonSerializer.Deserialize<A>(a); =>must put return type and change json to string;
+
+------------------
+
 
 
 
