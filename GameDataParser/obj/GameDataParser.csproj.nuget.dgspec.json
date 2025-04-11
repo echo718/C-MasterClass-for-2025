@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\gamedataparser\\GameDataParser.csproj": {}
+    "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\GameDataParser\\GameDataParser.csproj": {}
   },
   "projects": {
-    "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\gamedataparser\\GameDataParser.csproj": {
+    "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\GameDataParser\\GameDataParser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\gamedataparser\\GameDataParser.csproj",
+        "projectUniqueName": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\GameDataParser\\GameDataParser.csproj",
         "projectName": "GameDataParser",
-        "projectPath": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\gamedataparser\\GameDataParser.csproj",
+        "projectPath": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\GameDataParser\\GameDataParser.csproj",
         "packagesPath": "C:\\Users\\sunto\\.nuget\\packages\\",
-        "outputPath": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\gamedataparser\\obj\\",
+        "outputPath": "D:\\vscodeFolder\\CSharpMasterClass\\Play\\C-MasterClass-for-2025\\GameDataParser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sunto\\AppData\\Roaming\\NuGet\\NuGet.Config"
