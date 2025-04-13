@@ -1,6 +1,6 @@
-namespace GameDataParser.IRepository
+namespace GameDataParser.UserInteraction
 {
-    public interface IuserInteractor
+    public interface IUserInteractor
     {
         string ReadValidFilePath();
         void PrintMessage(string message);

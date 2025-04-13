@@ -1,6 +1,6 @@
-namespace GameDataParser.IRepository
+namespace GameDataParser.UserInteraction
 {
-    public class ConsoleUserInteractor : IuserInteractor
+    public class ConsoleUserInteractor : IUserInteractor
     {
         public void PrintMessage(string message)
         {
@@ -8,10 +8,10 @@ namespace GameDataParser.IRepository
         }
         public void PrintError(string message)
         {
-            var orginalColor = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("message");
-            Console.ForegroundColor = orginalColor;
+            // var orginalColor = Console.ForegroundColor;
+            // Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("message1");
+            //Console.ForegroundColor = orginalColor;
         }
         public string ReadValidFilePath()
         {

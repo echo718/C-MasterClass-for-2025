@@ -1,40 +1,35 @@
 using System.Text.Json;
-using GameDataParser.IRepository;
-using GameDataParser.Repository;
+using GameDataParser.DataAccess;
+using GameDataParser.Model;
+using GameDataParser.UserInteraction;
 
-namespace GameDataParser
+namespace GameDataParser.App
 {
     public class GameDataParserApp
     {
-        private readonly IuserInteractor _userInteractor;
-
-        public GameDataParserApp(IuserInteractor userInteractor)
+        private readonly IUserInteractor _userInteractor;
+        private readonly IGamesPrinter _gamesPrinter;
+        private readonly IVideoGamesDeserializer _videoGamesDeserializer;
+        private readonly IFileReader _fileReader;
+        public GameDataParserApp(
+            IUserInteractor userInteractor,
+            IGamesPrinter gamesPrinter,
+            IVideoGamesDeserializer videoGamesDeserializer,
+            IFileReader fileReader)
         {
             _userInteractor = userInteractor;
+            _gamesPrinter = gamesPrinter;
+            _videoGamesDeserializer = videoGamesDeserializer;
+            _fileReader = fileReader;
         }
 
         public void Run()
         {
             string fileName = _userInteractor.ReadValidFilePath();
-            var fileContents = File.ReadAllText(fileName);
-            var videoGames = DeserializeVideoGamesFrom(fileName, fileContents);
-            //GamesPrinter(videoGames);
-        }
-
-        private List<VideoGame> DeserializeVideoGamesFrom(string fileName, string fileContents)
-        {
-            try
-            {
-                return JsonSerializer.Deserialize<List<VideoGame>>(fileContents);
-            }
-            catch (JsonException ex)
-            {
-                _userInteractor.PrintError($"Json in {fileName} File was not " +
-                 $"in a valid format. Json body:");
-                _userInteractor.PrintError(fileContents);
-
-                throw new JsonException($"{ex.Message} the file is :{fileName}", ex);
-            }
+            var fileContents = _fileReader.Read(fileName);
+            Console.WriteLine($"filecontent:{fileContents},name:{fileName}");
+            var videoGames = _videoGamesDeserializer.DeserializeFrom(fileName, fileContents);
+            _gamesPrinter.Print(videoGames);
         }
     }
 }

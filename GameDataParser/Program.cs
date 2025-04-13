@@ -1,8 +1,16 @@
-﻿using GameDataParser;
-using GameDataParser.IRepository;
+﻿using GameDataParser.App;
+using GameDataParser.DataAccess;
+using GameDataParser.Logging;
+using GameDataParser.UserInteraction;
 
 var userInteractor = new ConsoleUserInteractor();
-var app = new GameDataParserApp(userInteractor);
+
+var app = new GameDataParserApp(
+    userInteractor,
+    new GamesPrinter(userInteractor),
+    new VideoGamesDeserializer(userInteractor),
+    new LocalFileReader()
+    );
 var logger = new Logger("log.txt");
 
 try

@@ -4,4 +4,70 @@
    at GameDataParser.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 20
    at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 10
                     
+                    [14/04/2025 9:41:01 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 30
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 9:42:18 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 30
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 9:44:30 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: gamesInvalidFormat.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 30
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 9:49:10 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 30
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 9:55:00 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games1.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 30
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 9:55:22 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games1.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 30
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 9:55:41 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games1.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 30
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 10:41:08 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 31
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 10:41:30 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 31
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 10:41:45 am]
+                    Exception message: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0. The file is: games.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 31
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
+                    [14/04/2025 10:43:18 am]
+                    Exception message: '{' is invalid after a value. Expected either ',', '}', or ']'. Path: $[1] | LineNumber: 6 | BytePositionInLine: 2. The file is: gamesInvalidFormat.json
+                    Stack track:   at GameDataParser.DataAccess.VideoGamesDeserializer.DeserializeFrom(String fileName, String fileContents) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\DataAccess\VideoGamesDeserializer.cs:line 29
+   at GameDataParser.App.GameDataParserApp.Run() in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\App\GameDataParserApp.cs:line 31
+   at Program.<Main>$(String[] args) in D:\vscodeFolder\CSharpMasterClass\Play\C-MasterClass-for-2025\GameDataParser\Program.cs:line 18
+                    
                     

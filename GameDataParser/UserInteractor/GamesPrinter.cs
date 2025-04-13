@@ -1,14 +1,13 @@
-using GameDataParser.IRepository;
-using GameDataParser.Repository;
+using GameDataParser.Model;
 
-namespace GameDataParser
+namespace GameDataParser.UserInteraction
 {
-    public class GamesPrinter
+    public class GamesPrinter : IGamesPrinter
     {
 
-        private readonly IuserInteractor _userInteractor;
+        private readonly IUserInteractor _userInteractor;
 
-        public GamesPrinter(IuserInteractor userInteractor)
+        public GamesPrinter(IUserInteractor userInteractor)
         {
             _userInteractor = userInteractor;
         }
