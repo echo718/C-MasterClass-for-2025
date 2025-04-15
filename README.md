@@ -211,8 +211,27 @@ catch(HTTPRequestException ex) when (ex.Message = 403)
 5. we can custom exception, except using buildin exceptions, such as ArgumentException("") or ArgumentOutOfRangeException(""), ArgumentNullException(""), InvalidOperationException("")
 6. change console color:Console.ForegroundColor = ConsoleColor.Red;
 
+------------------
 
+Chapter 6:
+1. default(T) will return 0 for int, null for string or datetime default value
+2. return multiple values in a method:
+   public class test<T1,T2>
+   {
+   	public T1 Item1{get;private set;}
+   	public T2 Item2{get;private set;}
 
+   	public test(item1,item2)
+  	 {
+   		Item1=item1;
+   		Item2=item2;
+  	 }
+   }
+   test methodName()
+   {
+	return new test(number1, number2);
+   }
+4. We can't pass a concrete type as generic parameter when declaring a class. We should use some "T" instead of int.
 
 
 
