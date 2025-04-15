@@ -232,7 +232,16 @@ Chapter 6:
 	return new test(number1, number2);
    }
 4. We can't pass a concrete type as generic parameter when declaring a class. We should use some "T" instead of int.
-
+5. ArrayList can have any type, such as:
+ArrayList a = new ArrayList{a,"w",new DateTime()}
+so inside ArrayList is an object, ArrayList doesn't know the inside data type.normally not user arraylist
+6. Type a = typeof(DateTime);
+int number = 42;
+Type typeInfo = number.GetType();
+Console.WriteLine(typeInfo);==>System.Int32
+7. Stopwatch a = Stopwatch.StartNew();
+a.Stop();
+a.ElapsedMilliseconds=>calculate execute time
 
 
 
