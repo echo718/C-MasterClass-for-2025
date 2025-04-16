@@ -242,11 +242,45 @@ Console.WriteLine(typeInfo);==>System.Int32
 7. Stopwatch a = Stopwatch.StartNew();
 a.Stop();
 a.ElapsedMilliseconds=>calculate execute time
-
-
-
-
-
+8. var a = new List<t>(1000)=> will create a list with length 1000
+9. List<TPerson> testMethodName<TPerson>(List<TPerson> value): where TPerson : Person => it means TPerson comes from Person type.
+10. Sort()method only sort single parameter, such as:
+List<int> a = new int{1,3,5}; a.Sort()
+however, if List<People> a = new List<Perople>{
+new People {Name="1",Birth = 2}
+} then a.Sort() will cause error, to solve it, we need to:
+public class People:Icomparable<People>
+{
+	public string Name;
+	pulic int Birth;
+	public int CompareTp(Peple other)
+	{
+ 		re-write compare logic here
+	}
+}
+11. Func<int, bool> predicate=>Func is a function, bool part is return type, int is parameter;
+    Func<int, DateTime, string ,decimal> someFunc =>decimal is a return type.
+Action<string, bool, string>=>all parameters no return
+Func is a functiton, can pass to a method.
+bool IsEven(int number) {
+    return number % 2 == 0;
+}
+var numbers = new[] { 1, 2, 3 };
+// Use a function like this:
+bool result = IsAny(numbers, IsEven); // You pass the function as a delegate
+Console.WriteLine(result);
+// Here's the IsAny function
+bool IsAny(IEnumerable<int> numbers1, Func<int, bool> predicate) {
+    foreach (var number in numbers1) {
+        if (predicate(number)) {
+            return true;
+        }
+    }
+    return false;
+}
+IsEven as a function pass to IsAny, 
+but now we can use lambda expression to pass functon to a method:
+eg. isAny(numbers,n=>n>10)
 
 
 
