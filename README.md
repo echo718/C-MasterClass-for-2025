@@ -281,9 +281,8 @@ bool IsAny(IEnumerable<int> numbers1, Func<int, bool> predicate) {
 IsEven as a function pass to IsAny, 
 but now we can use lambda expression to pass functon to a method:
 eg. isAny(numbers,n=>n>10)
-
-
-
+12. delegate exist before func/action, it's old code, now can be replaced by func/lamba
+13. Dictionay: collection of key-values pairs.eg: var test = new Dictionary<string, string>(); test.Add("USA","USD"); then we can call using test["USA], or test["USA"]="TEST1"; or we can add like this: new Dictionary<string,string> = {["USA"]="USD",["India"]="INR",} or we can add like this: new Dictionary<string,string>{{"USA","USD"},{"India","INR"}}; tets.ContainsKey("keyname") can check if exist the key in the dictionary. or use foreach(var a in test){a.Key//a.Value ***}. however, if key not exist yet, we can't do: test["keyname"].Add(value)=> it will cause error as the key not exist, so we need to create key first: test["keyname"]=value;
 
 
 
